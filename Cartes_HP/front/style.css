@@ -1,0 +1,2238 @@
+/*Polices Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url('images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+}
+
+main {
+  width: 100%;
+
+}
+
+::selection {
+  background-color: rgba(76, 21, 106, 0.816);
+  color: rgb(255, 255, 255);
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(186, 186, 198, 0.5);
+}
+
+
+a:hover {
+  color: #c5adea;
+  text-shadow: 2px 2px 4px rgba(55, 0, 255, 0.421);
+}
+
+/***********************titre de la page**************************/
+
+.titre {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(120, 117, 117, 0.686);
+  height: 2em;
+  font-size: 60px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.849);
+  border-radius: 2px;
+
+}
+
+
+
+/**************************** Texte **************************************/
+
+.texte_classique {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 23px;
+  justify-content: center;
+}
+
+/*************************** bouton Echanges ****************************************/
+
+
+.bouton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  background-color: #33006ad2;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 3;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1rem 0 3rem #000;
+
+}
+
+.bouton:hover {
+  background-color: #33006a99;
+  transition: ease-out 0.4s;
+}
+
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(111, 0, 255, 0.353);
+  /* Couleur de fond sombre avec une opacité */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+  /* Caché par défaut */
+}
+
+
+
+
+
+
+/*-----------------------------cartes obtenues (profil)-------------------------------*/
+
+.cartes_obtenues_booster {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(55, 6, 96, 0.333);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+.cartes_obtenues_booster_title {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(124, 9, 170, 0.686);
+
+}
+
+
+
+/* .swiper {
+  width: 600px;
+  height: 300px;
+} */
+
+
+
+/*----------------------Maison 1---------------------*/
+
+
+
+
+
+.maison1 {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(96, 6, 6, 0.333);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+.maison1_title {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(170, 9, 9, 0.686);
+
+}
+
+.card_H1 {
+  display: flex;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(38, 4, 4);
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin: 0 35px;
+  flex-direction: column;
+
+
+}
+
+.card_H1 .information {
+  width: 100%;
+  background-color: #121111;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  border-radius: 10px;
+}
+
+/****couleur information des cartes*****/
+
+#harry-name {
+  color: white;
+
+}
+
+#hermione-name {
+  color: white;
+
+}
+
+#ron-name {
+  color: white;
+
+}
+
+
+.card_H1 .information p {
+  color: white;
+}
+
+
+
+.image1 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card_H1 .image1 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H1 .image2 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H1 .image3 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card_H1 .star {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  z-index: 2;
+}
+
+
+ 
+
+
+.card_H1 .star svg {
+  fill: #312727d5;
+  transition: fill 0.3s ease;
+
+}
+
+.card_H1 .star:hover svg {
+  fill: rgba(218, 165, 32, 0.868);
+}
+
+.yellow-fill path {
+  fill: rgb(218, 165, 32);
+}
+
+/*transition quand souris passe sur carte de Maison 1*/
+
+.card_H1:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card_H1:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.card_H1:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+
+
+
+/*----------------------Maison 2---------------------*/
+
+.maison2 {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(17, 6, 96, 0.34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+.maison2_title {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+
+}
+
+.card_H2 {
+  display: flex;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(4, 2, 25);
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin: 0 35px;
+  flex-direction: column;
+
+
+}
+
+.card_H2 .information {
+  width: 100%;
+  background-color: #121111;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  border-radius: 10px;
+}
+
+/****couleur information des cartes*****/
+
+#luna-name {
+  color: white;
+
+}
+
+#cho-name {
+  color: white;
+}
+
+#gilderoy-name {
+  color: white;
+}
+
+.card_H2 .information p {
+  color: white;
+}
+
+
+.image4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H2 .image4 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H2 .image5 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H2 .image6 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.card_H2 .star {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  z-index: 2;
+
+}
+
+
+
+.card_H2 .star svg {
+  fill: #312727d5;
+  transition: fill 0.3s ease;
+
+}
+
+.card_H2 .star:hover svg {
+  fill: rgba(218, 165, 32, 0.868);
+
+}
+
+/*transition quand souris passe sur carte de Maison 2*/
+
+.card_H2:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card_H2:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.card_H2:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+
+
+
+
+/*----------------------Maison 3---------------------*/
+
+.maison3 {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(79, 64, 4, 0.421);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+.maison3_title {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(170, 157, 9, 0.686);
+
+}
+
+.card_H3 {
+  display: flex;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(40, 38, 13);
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin: 0 35px;
+  flex-direction: column;
+
+
+}
+
+.card_H3 .information {
+  width: 100%;
+  background-color: #121111;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  border-radius: 10px;
+}
+
+/****couleur information des cartes*****/
+
+#cedric-name {
+  color: white;
+
+}
+
+#nymphadora-name {
+  color: white;
+}
+
+#newt-name {
+  color: white;
+}
+
+.card_H3 .information h3 {
+  color: white;
+}
+
+.card_H3 .information p {
+  color: white;
+}
+
+
+
+.image7 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card_H3 .image7 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image8 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card_H3 .image8 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image9 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H3 .image9 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card_H3 .star {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  z-index: 2;
+
+}
+
+
+
+.card_H3 .star svg {
+  fill: #312727d5;
+  transition: fill 0.3s ease;
+
+}
+
+.card_H3 .star:hover svg {
+  fill: rgba(218, 165, 32, 0.868);
+
+}
+
+/*transition quand souris passe sur carte de Maison 3*/
+
+.card_H3:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card_H3:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.card_H3:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+
+/*----------------------Maison 4---------------------*/
+
+.maison4 {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(8, 46, 2, 0.305);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+.maison4_title {
+  background-color: #040404;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(30, 170, 9, 0.686);
+
+}
+
+.card_H4 {
+  display: flex;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(3, 27, 4);
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  margin: 0 35px;
+  flex-direction: column;
+
+
+}
+
+.card_H4 .information {
+  width: 100%;
+  background-color: #121111;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  border-radius: 10px;
+}
+
+/****couleur information des cartes*****/
+
+#severus-name {
+  color: white;
+
+}
+
+#draco-name {
+  color: white;
+
+}
+
+#lord-name {
+  color: white;
+
+}
+
+.card_H4 .information p {
+  color: white;
+}
+
+
+.image10 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H4 .image10 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image11 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H4 .image11 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.image12 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_H4 .image12 img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.card_H4 .star {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 80%;
+  z-index: 2;
+
+}
+
+
+
+.card_H4 .star svg {
+  fill: #312727d5;
+  transition: fill 0.3s ease;
+
+}
+
+.card_H4 .star:hover svg {
+  fill: rgba(218, 165, 32, 0.868);
+
+}
+
+/*transition quand souris passe sur carte de Maison 4*/
+
+.card_H4:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card_H4:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+
+.card_H4:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+/* **************************************** */
+
+
+
+
+
+/***************************Menu Burger*********************************/
+
+menu {
+  background-color: #201f1f;
+  color: #fff;
+  padding: 6px;
+  text-align: center;
+
+}
+
+nav {
+  /* display: none; */
+  background-color: #000000ac;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  /* barre est d'abord cachée à gauche */
+  /*width: 200px;
+  height: 400px;*/
+  /* overflow-y: auto; */
+  transition: 0.5s;
+  z-index: 3;
+  width: 17em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  text-align: justify;
+  margin: 30px;
+  /*justify-content:center;*/
+
+}
+
+.menu-bouton {
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+}
+
+@media screen {
+  nav {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+
+/********************Zone recheche******************************************/
+#recherche {
+
+  text-align: center;
+  color: white;
+}
+
+
+.icones-maisons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* Espace entre les images */
+}
+
+.icones-maisons img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icones-maisons img:hover {
+  opacity: 0.7;
+
+}
+
+
+.carte_recherche {
+
+  height: 550px;
+  width: 100vw;
+  background-color: rgba(52, 54, 52, 0.305);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-radius: 5px;
+
+}
+
+
+
+
+/*****************Booster*******************/
+
+#booster {
+  background-color: rgba(0, 0, 0, 0.189);
+  display: flex;
+
+}
+
+
+#boosterContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #0000006c;
+  width: 28%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#boosterContainer:hover {
+  box-shadow: 0 0 10px 3px white;
+  /* Contour blanc quand souris passe sur booster */
+}
+
+#boosterTitle {
+  display: flex;
+  color: white;
+  font-size: 50px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 8px;
+
+}
+
+
+#boosterImage {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+
+/*
+#boosterLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(28, 27, 27, 0.5);
+  color: #fff;
+  font-size: 18px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+*/
+
+#tempsRestant {
+  display: flex;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+
+}
+
+
+/*********************************Formulaire d'echange****************************************/
+
+
+
+.form_echange {
+
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.682);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 50em;
+  height: 10%;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.form_echange:hover {
+  box-shadow: 0 0 10px 3px white;
+}
+
+.form_echange>div {
+
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/**************************************************************************/
+
+
+
+
+
+
+
+/****************************Informations du profil*********************************/
+
+
+
+.Informations_du_profil {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #0000007c;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Informations_du_profil:hover {
+  box-shadow: 0 0 10px 3px white;
+
+}
+
+.Informations_du_profil ul {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 21px;
+}
+
+.Informations_du_profil h2 {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+
+}
+
+.titre_cartes_obtenues {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(120, 117, 117, 0.507);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+/*********************************Formulaire de connexion****************************************/
+
+
+
+.form_connexion {
+
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.682);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 50%;
+  margin: 80px auto;
+  margin-bottom: 80px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.form_connexion:hover {
+  box-shadow: 0 0 10px 3px white;
+}
+
+.form_connexion>div {
+
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+
+
+  margin-bottom: 8px;
+  justify-content: center;
+  display: flex;
+  color: white;
+
+
+}
+
+input {
+  height: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  color: white;
+  background-color: rgba(25, 25, 25, 0.819);
+
+}
+
+button {
+
+  cursor: pointer;
+  justify-content: center;
+  margin: 30px 200px 40px;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  background-color: rgba(123, 0, 255, 0.474);
+  color: white;
+
+}
+
+button:hover {
+
+  background-color: rgba(52, 0, 142, 0.363);
+  transition: ease-out 0.4s;
+}
+
+.message-error {
+  border: 1px solid rgb(51, 5, 5);
+  color: rgb(255, 255, 255);
+  background-color: rgba(57, 6, 6, 0.773);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 23px;
+
+}
+
+.message-error.visible {
+
+  display: flex;
+}
+
+
+.success {
+  border: 1px solid rgba(81, 150, 2, 0.734);
+  background-color: rgba(29, 51, 3, 0.508);
+  justify-content: center;
+}
+
+.message-success {
+  border: 1px solid rgb(15, 6, 65);
+  color: rgb(215, 212, 248);
+  background-color: rgba(3, 5, 63, 0.627);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 23px;
+}
+
+.message-success.visible {
+
+  display: flex;
+}
+
+
+/**************************************************************************/
+
+
+/*********************************Formulaire de insciption****************************************/
+
+
+
+.form_inscription {
+
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.682);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 50%;
+  margin: 80px auto;
+  margin-bottom: 80px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.form_inscription:hover {
+  box-shadow: 0 0 10px 3px white;
+}
+
+.form_inscription>div {
+
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+/**************************************************************************/
+
+
+
+
+
+
+/***********************Détails de cartes******************************/
+
+
+hr {
+  border: 2px solid black;
+  opacity: 0.4;
+  width: 100%;
+  justify-content: center;
+
+
+}
+
+/*seulement pour carte 9 pour l'instant car pas dans API*/
+.details_cartes_texte {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 23px;
+  text-align: center;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+}
+
+.conteneur-carte-information {
+  display: flex;
+  flex-direction: row;
+  margin: 0 280px 0;
+  box-shadow: -1rem 0 3rem #000;
+  margin-bottom: 40px;
+  background-color: #00000090;
+  border: solid 1px rgb(146, 146, 146);
+  padding: 20px;
+}
+
+
+/*seulement pour carte 9 pour l'instant car pas dans API*/
+.titre_carte {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+
+}
+
+
+
+/*****************************Maison 1 détails***************************/
+
+.maison1_details {
+
+  background-color: rgba(96, 6, 6, 0.282);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+
+}
+
+
+/*******carte 1 details*********/
+
+#harry-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image1_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+
+}
+
+.card_H1_details .image1_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#harry-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/**********************carte 2 details***********************************/
+
+#hermione-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image2_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.card_H1_details .image2_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#hermione-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/***************carte 3 details********************/
+
+#ron-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image3_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.card_H1_details .image3_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#ron-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/*********************************** Maison 2 Détails ********************************/
+
+.maison2_details {
+
+  background-color: rgba(14, 6, 96, 0.297);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+
+}
+
+
+/*******carte 4 details*********/
+
+#luna-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image4_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H2_details .image4_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#luna-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**********************carte 5 details***********************************/
+
+#cho-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image5_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H2_details .image5_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#cho-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/***************carte 6 details********************/
+
+#gilderoy-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+
+.image6_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H2_details .image6_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#gilderoy-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/************************************* Maison 3 Détails **************************/
+
+.maison3_details {
+
+  background-color: rgba(96, 93, 6, 0.263);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+
+}
+
+
+/*******carte 7 details*********/
+
+#cedric-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.image7_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H3_details .image7_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#cedric-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**********************carte 8 details***********************************/
+
+#nymphadora-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+
+.image8_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H3_details .image8_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#nymphadora-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/***************carte 9 details********************/
+
+.image9_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H3_details .image9_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+
+/************************************** Maison 4 Détails ********************************************/
+
+
+.maison4_details {
+
+  background-color: rgba(16, 63, 6, 0.282);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+
+}
+
+
+/*******carte 10 details*********/
+
+#severus-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+
+.image10_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H4_details .image10_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#severus-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**********************carte 11 details***********************************/
+
+#draco-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.imag11_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H4_details .image11_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#draco-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/***************carte 12 details********************/
+
+#lord-name-details {
+  display: flex;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  font-family: 'Poppins', arial;
+  text-shadow: 2px 2px 4px rgba(9, 9, 170, 0.686);
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+
+.image12_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+
+
+.card_H4_details .image12_details img {
+  display: flex;
+  width: 345px;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+#lord-informations {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+  font-size: 20px;
+  text-align: justify;
+  line-height: 4.4;
+  margin: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+/*************************** responsive  ************************************/
+
+@media all and (max-width: 1040px) {
+
+
+  .main {
+    padding-top: 20px;
+  }
+
+  .titre {
+    height: 3em;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .menu-bouton {
+
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 2.4em;
+  }
+
+  nav {
+
+    background-color: #000000ac;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    transition: 0.5s;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    display: block;
+  }
+
+  nav a {
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 31px;
+    text-align: center;
+    /*justify-content:center;*/
+
+  }
+
+
+
+
+  .maison1 {
+    height: auto;
+    min-height: 550px;
+    width: 100vw;
+    background-color: rgba(96, 6, 6, 0.333);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    flex-direction: column;
+
+  }
+
+
+
+
+  .card_H1 {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(38, 4, 4);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    margin: 0 35px;
+    /* Marge horizontale entre les cartes */
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+
+  .maison2 {
+    height: auto;
+    min-height: 550px;
+    width: 100vw;
+    background-color: rgba(17, 6, 96, 0.34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    flex-direction: column;
+
+  }
+
+
+  .card_H2 {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(4, 2, 25);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    margin: 0 35px;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+
+  .maison3 {
+    height: auto;
+    min-height: 550px;
+    width: 100vw;
+    background-color: rgba(79, 64, 4, 0.421);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    flex-direction: column;
+
+  }
+
+
+  .card_H3 {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(40, 38, 13);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    margin: 0 35px;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+
+  .maison4 {
+    height: auto;
+    min-height: 550px;
+    width: 100vw;
+    background-color: rgba(8, 46, 2, 0.305);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    flex-direction: column;
+
+  }
+
+
+  .card_H4 {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(3, 27, 4);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    margin: 0 35px;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+
+  .bouton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-bottom: 20px;
+    background-color: #33006ad2;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1rem 0 3rem #000;
+
+  }
+
+
+
+  #boosterContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #0000006c;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  #boosterImage {
+    width: auto;
+    height: 350px;
+    display: flex;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+
+  .Informations_du_profil {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #0000007c;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5%;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+
+
+  /*********détails de cartes************/
+
+
+  .image1_details {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .conteneur-carte-information {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .details_cartes_texte {
+    justify-content: center;
+
+  }
+
+
+}

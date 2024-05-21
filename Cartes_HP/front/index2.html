@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- lien swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--Lien CDN Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>Profil - Plateforme de Collection de Cartes Harry Potter</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="menu">
+      <span class="menu-bouton" onclick="toggleNav()">☰ Menu</span>
+
+      <nav>
+        <a href="index.html#" onclick="toggleNav()">Accueil</a>
+        <a href="#" onclick="toggleNav()">Page de Profil</a>
+        <a href="index3.html#" onclick="toggleNav()">Connexion</a>
+        <a href="index4.html#" onclick="toggleNav()">Inscription</a>
+        <a href="index5.html#" onclick="toggleNav()">Détails de carte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="titre">
+      <h1 class="titre">
+        <p>Profil</p>
+      </h1>
+    </section>
+
+    <br><br><br>
+
+    <section id="informations__du__profil">
+
+      <div class="Informations_du_profil">
+        <h2>Informations</h2>
+        <ul style="list-style-type:none;">
+          <li><div id="pseudoDiv" class="texte_classique"></div></li>
+          <li>Nombre de cartes obtenues : </li>
+        </ul>
+
+
+      </div>
+
+    </section>
+    <br><br><br>
+
+
+    <h2 class="titre_cartes_obtenues">Liste des cartes obtenues</h2>
+
+    <!--bouton recherche-->
+    <section id="recherche">
+
+      <label for="champsRecherche" class="texte_classique">Recherchez une carte :</label>
+      <center><input type="text" id="champsRecherche" placeholder="Recherche..." onchange="effectuerRecherche()">
+      </center>
+
+      <div id="resultatsRecherche">
+        <!-- Les résultats de la recherche seront affichés ici -->
+      </div>
+
+      <br>
+      <div class="icones-maisons">
+        <img src="images/House1.png" alt="Godric Gryffindor" onclick="scrollToElementSmooth('maison__1')">
+        <img src="images/House2.png" alt="Rowena Ravenclaw" onclick="scrollToElementSmooth('maison__2')">
+        <img src="images/House3.png" alt="Helga Hufflepuff" onclick="scrollToElementSmooth('maison__3')">
+        <img src="images/House4.png" alt="Salazar Slytherin" onclick="scrollToElementSmooth('maison__4')">
+
+
+
+      </div>
+      <br>
+      <!-- zone de recherche de carte, zone où le nom de la carte qui sera tapé dans la zone de recherche sera affichée -->
+      <!-- <div class="carte_recherche">
+
+      </div> -->
+
+    </section>
+
+
+
+
+
+    <!-- cartes obtenues -->
+
+
+    <section>
+      <div id="cartes__obtenues_booster">
+        <h2 class="cartes_obtenues_booster_title">Cartes Obtenues</h2>
+        <div class="cartes_obtenues_booster" class="swiper">
+
+          <div class="swiper-cartes">
+<!-- cartes rajoutées de manière dynamique -->
+          </div>
+
+
+          <div class="swiper-scrollbar"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+ 
+
+
+
+    <!-------------------formulaire d'échanges---------------------->
+
+
+    <div class="bouton" onclick="afficherFormulaire()" title="Echangez des cartes avec d'autres utilisateurs">Echanges
+    </div>
+
+    <!-- Overlay et formulaire -->
+    <div class="overlay" id="overlay" onclick="fermerFormulaire()">
+      <div id="formulaire">
+
+
+
+
+        <form class="form_echange" action="" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="pseudo" class="texte_classique">Pseudo de l'utilisateur</label>
+            <input type="text" name="pseudo" id="pseudo">
+
+          </div>
+
+          <div>
+            <label for="pseudo" class="texte_classique">Nom de Carte que vous souhaitez échanger</label>
+            <input type="text" name="pseudo">
+
+          </div>
+
+          <div>
+            <label for="pseudo" class="texte_classique"> Nom de Carte que vous souhaitez obtenir</label>
+            <input type="text" name="pseudo">
+
+          </div>
+
+          <button type="submit" class="texte_classique">Envoyer la demande</button>
+
+
+        </form>
+
+      </div>
+    </div>
+
+
+    <script>
+            // Récupérer les informations d'inscription depuis le localStorage
+    const informationsConnexion = localStorage.getItem('informationsConnexion');
+
+if (informationsConnexion) {
+    // Convertir les informations en objet JavaScript
+    const connexionData = JSON.parse(informationsConnexion);
+
+    // Extraire le pseudo de l'objet
+    const pseudo = connexionData.pseudo;
+
+    // Afficher le pseudo dans votre élément HTML
+    const pseudoDiv = document.getElementById("pseudoDiv");
+    if (pseudoDiv) {
+        pseudoDiv.textContent = "Bienvenue, " + pseudo + " !";
+    } else {
+        console.error("Erreur: pseudoDiv is null");
+    }
+} else {
+    console.error("Erreur: Les informations de connexion n'ont pas été trouvées dans le localStorage");
+}
+  </script>
+
+    <!--------------------------------------------------------------->
+
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      const Swiper = new Swiper('.swiper', {
+          // paramètres
+          direction: 'vertical',
+          loop: true,
+        
+          // scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      
+      </script>
+    
+
+    <div class="footer"></div>
+
+  </main>
+  <footer></footer>
+
+  <script src="javascript.js"></script>
+  <script src="connexion.js"></script>
+  <script src="inscription.js"></script>
+  <script src="booster-card.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  
+</body>
+
+</html>

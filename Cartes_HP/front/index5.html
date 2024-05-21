@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Lien CDN Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Détails - Plateforme de Collection de Cartes Harry Potter</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="menu">
+            <span class="menu-bouton" onclick="toggleNav()">☰ Menu</span>
+
+            <nav>
+                <a href="index.html#" onclick="toggleNav()">Accueil</a>
+                <a href="index2.html#" onclick="toggleNav()">Page de Profil</a>
+                <a href="index3.html#" onclick="toggleNav()">Connexion</a>
+                <a href="index4.html#" onclick="toggleNav()">Inscription</a>
+                <a href="#" onclick="toggleNav()">Détails de carte</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="titre">
+            <h1 class="titre">
+                <p>Détails des cartes</p>
+            </h1>
+        </section>
+
+        <br><br><br>
+
+
+        <br><br><br>
+
+
+
+
+
+        <br>
+        <div class="icones-maisons">
+            <img src="images/House1.png" alt="Godric Gryffindor" onclick="scrollToElementSmooth('maison__1')">
+            <img src="images/House2.png" alt="Rowena Ravenclaw" onclick="scrollToElementSmooth('maison__2')">
+            <img src="images/House3.png" alt="Helga Hufflepuff" onclick="scrollToElementSmooth('maison__3')">
+            <img src="images/House4.png" alt="Salazar Slytherin" onclick="scrollToElementSmooth('maison__4')">
+
+
+        </div>
+        <br>
+
+
+        </section>
+
+
+
+        <section id="cartes_details">
+
+            <!-- Maison 1 -->
+
+            <!-- Cartes Maison 1 -->
+
+            <section>
+                <div id="maison__1">
+                    <h2 class="maison1_title">Godric Gryffindor</h2>
+                    <div class="maison1_details">
+
+                        <div id="carte__1">
+
+                            <!-- API 1-->
+                            <div id="harry-name-details"></div>
+                        </div>
+
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H1_details">
+                                <div class="image1_details">
+                                    <img src="images/Carte_HP_1.png" alt="Carte Harry Potter">
+                                </div>
+                            </div>
+
+                            <!-- API 1 info -->
+                            <div id="harry-informations"></div>
+
+
+
+                        </div>
+
+                        <hr />
+
+                        <div id="carte__2">
+                            <!-- API 2 -->
+                            <div id="hermione-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H1_details">
+
+
+                                <div class="image2_details">
+                                    <img src="images/Carte_HP_2.png" alt="Carte Hermione Granger">
+                                </div>
+
+                            </div>
+
+
+                            <!-- API 2 info -->
+                            <div id="hermione-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+                        <div id="carte__3">
+                            <!-- API 3 -->
+                            <div id="ron-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H1_details">
+
+                                <div class="image3_details">
+                                    <img src="images/Carte_HP_3.png" alt="Carte Ron Weasley">
+                                </div>
+
+                            </div>
+
+                            <!-- API 3 info -->
+                            <div id="ron-informations"></div>
+
+                        </div>
+
+
+
+                    </div>
+            </section>
+
+
+
+
+            <!-- Maison 2 -->
+
+            <!-- Cartes Maison 2 -->
+
+            <section>
+                <div id="maison__2">
+                    <h2 class="maison2_title">Rowena Ravenclaw</h2>
+
+                    <div class="maison2_details">
+
+
+                        <div id="carte__4">
+                            <!-- API 4 -->
+                            <div id="luna-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H2_details">
+                                <div class="image4_details">
+                                    <img src="images/Carte_HP_4.png" alt="Carte Luna Lovegood">
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- API 4 info -->
+                            <div id="luna-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+
+                        <div id="carte__5">
+                            <!-- API 5 -->
+                            <div id="cho-name-details"></div>
+                        </div>
+                        <div class="conteneur-carte-information">
+                            <div class="card_H2_details">
+
+
+
+                                <div class="image5_details">
+                                    <img src="images/Carte_HP_5.png" alt="Carte Cho Chang">
+                                </div>
+
+                            </div>
+
+
+                            <!-- API 5 info -->
+                            <div id="cho-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+
+                        <div id="carte__6">
+                            <!-- API 6 -->
+                            <div id="gilderoy-name-details"></div>
+                        </div>
+                        <div class="conteneur-carte-information">
+                            <div class="card_H2_details">
+
+
+
+                                <div class="image6_details">
+                                    <img src="images/Carte_HP_6.png" alt="Carte Gilderoy Lockhart">
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- API 6 info -->
+                            <div id="gilderoy-informations"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Maison 3 -->
+
+            <!-- Cartes Maison 3 -->
+
+            <section>
+                <div id="maison__3">
+                    <h2 class="maison3_title">Helga Hufflepuff</h2>
+                    <div class="maison3_details">
+
+                        <div id="carte__7">
+                            <!-- API 7 -->
+                            <div id="cedric-name-details"></div>
+                        </div>
+                        <div class="conteneur-carte-information">
+                            <div class="card_H3_details">
+                                <div class="image7_details">
+                                    <img src="images/Carte_HP_7.png" alt="Carte Cedric Diggory">
+                                </div>
+
+
+                            </div>
+
+                            <!-- API 7 info -->
+                            <div id="cedric-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+
+                        <div id="carte__8">
+                            <!-- API 8 -->
+                            <div id="nymphadora-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H3_details">
+
+                                <div class="image8_details">
+                                    <img src="images/Carte_HP_8.png" alt="Carte Nymphadora Tonks">
+                                </div>
+
+
+                            </div>
+
+                            <!-- API 8 info -->
+                            <div id="nymphadora-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+                        <div id="carte__9">
+                            <!-- API 9 -->
+                            <h2 class="titre_carte">Newt Scamander</h2>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H3_details">
+
+                                <div class="image9_details">
+                                    <img src="images/Carte_HP_9.png" alt="Carte Newt Scamander">
+                                </div>
+
+                            </div>
+
+                            <!-- API 9 info -->
+                            <h1 class="details_cartes_texte"> 1897-02-24<br>
+                                Pure-Blood<br>
+                                Magizoologist<br>
+                                Eddie Redmayne
+                            </h1>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Maison 4 -->
+
+            <!-- Cartes Maison 4 -->
+
+            <section>
+                <div id="maison__4">
+                    <h2 class="maison4_title">Salazar Slytherin</h2>
+                    <div class="maison4_details">
+
+                        <div id="carte__10">
+                            <!-- API 10 -->
+                            <div id="severus-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H4_details">
+                                <div class="image10_details">
+                                    <img src="images/Carte_HP_10.png" alt="Carte Severus Snape">
+                                </div>
+
+                            </div>
+
+                            <!-- API 10 info -->
+                            <div id="severus-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+                        <div id="carte__11">
+                            <!-- API 11 -->
+                            <div id="draco-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H4_details">
+
+                                <div class="image11_details">
+                                    <img src="images/Carte_HP_11.png" alt="Carte Draco Malfoy">
+                                </div>
+
+                            </div>
+
+                            <!-- API 11 info -->
+                            <div id="draco-informations"></div>
+
+                        </div>
+
+                        <hr />
+
+
+                        <div id="carte__12">
+                            <!-- API 12 -->
+                            <div id="lord-name-details"></div>
+                        </div>
+
+                        <div class="conteneur-carte-information">
+                            <div class="card_H4_details">
+
+                                <div class="image12_details">
+                                    <img src="images/Carte_HP_12.png" alt="Carte Lord Voldemort">
+                                </div>
+
+                            </div>
+                            <!-- API 12 info -->
+                            <div id="lord-informations"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <div class="footer"></div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="connexion.js"></script>
+</body>
+
+</html>

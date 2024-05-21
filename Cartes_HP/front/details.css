@@ -1,0 +1,305 @@
+/*Polices Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url('images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+}
+
+main {
+  width: 100%;
+
+}
+
+::selection {
+  background-color: rgba(76, 21, 106, 0.816);
+  color: rgb(255, 255, 255);
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(186, 186, 198, 0.5);
+  }
+  
+  
+  a:hover {
+    color: #c5adea;
+    text-shadow: 2px 2px 4px rgba(55, 0, 255, 0.421);
+  }
+
+
+
+.titre {
+    background-color: #040404;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    font-family: 'Poppins', arial;
+    text-shadow: 2px 2px 4px rgba(120, 117, 117, 0.686);
+    height: 2em;
+    font-size: 60px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+.footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.849);
+    border-radius: 2px;
+    
+  }
+
+  /**************************** Texte **************************************/
+
+.texte_classique {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(133, 129, 129, 0.5);
+    font-size: 29px;
+    text-align: center;
+    line-height: 40px;
+    justify-content: center;
+  }
+
+
+  /***************************Menu Burger*********************************/
+
+menu {
+    background-color: #201f1f;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    z-index: 100;
+  
+  }
+  
+  nav {
+    /* display: none; */
+    background-color: #000000ac;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* barre est d'abord cachée à gauche */
+    /*width: 200px;
+    height: 400px;*/
+    /* overflow-y: auto; */
+    transition: 0.5s;
+    z-index: 3;
+    width: 17em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav a {
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+    text-align: justify;
+    margin: 30px;
+    /*justify-content:center;*/
+  
+  }
+  
+  .menu-bouton {
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+  }
+  
+  @media screen {
+    nav {
+      display: block;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+
+
+  /*********************cartes informations***************************/
+
+  .card-img{
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    align-items: center;
+    padding:-90px 0 -90px;
+    transform: scale(0.5);
+    margin-bottom:-200px;
+    margin-top:-200px;
+
+  }
+
+  .conteneur-carte-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 280px 0;
+    box-shadow: -1rem 0 3rem #000;
+    margin-bottom: 40px;
+    background-color: #00000090;
+    border: solid 1px rgb(146, 146, 146);
+    padding: 40px;
+  }
+
+  .conteneur-carte-information h2{
+    display: flex;
+    justify-content: center;
+    margin: 0 200px 0;
+    box-shadow: -1rem 0 3rem #000;
+    background-color: #00000090;
+    border: solid 1px rgb(146, 146, 146);
+    padding:20px;
+    font-size: 60px;
+  }
+
+
+
+  
+
+  /*************************** responsive  ************************************/
+
+@media all and (max-width: 1300px) {
+
+
+    .main {
+      padding-top: 20px;
+    }
+  
+    .titre {
+      height: 4em;
+      width: 100%;
+      font-size: 70px;
+      display: flex;
+      align-items: center;
+  
+    }
+  
+  
+    .menu-bouton {
+  
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      padding-top: 2.4em;
+    }
+  
+    nav {
+  
+      background-color: #000000ac;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      height: 100%;
+      width: 300px;
+      transition: 0.5s;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      padding-top: 200px;
+      display: block;
+    }
+  
+    nav a {
+      display: flex;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 31px;
+      text-align: center;
+      /*justify-content:center;*/
+  
+    }
+
+  
+    /*********détails de cartes************/
+  
+
+  
+    .conteneur-carte-information {
+        display: flex !important;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .details_cartes_texte {
+      justify-content: center;
+  
+    }
+
+    .footer{
+        bottom:0;
+        height: 400px;
+        
+    }
+
+    .card-img{
+        display: flex;
+        /* justify-content: center; */
+
+        transform: scale(0.7);
+
+    
+      }
+  
+
+      .conteneur-carte-information h2{
+padding:auto;
+      }
+
+    .conteneur-carte-information {
+
+        padding: 80px;
+        font-size: 100px;
+        height: 100%;
+        align-items: start;
+        margin:100px;
+        flex-direction: column;
+        
+
+        
+      }
+  
+  }
